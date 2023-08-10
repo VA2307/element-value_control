@@ -6,7 +6,7 @@ let volumeRect = Array.from(document.querySelectorAll('.volume-rect'));
 let i = 0;
 
 buttonPlus.onclick = () => {
-  if(counter.textContent >= 0 && counter.textContent < 10) {
+  if(counter.textContent < 10) {
     counter.textContent++;
     volumeRect[i].classList.add('volume-rect__active');
     i++;
